@@ -17,6 +17,11 @@ body {
 .container {
   display: flex;
   width: 90vw;
+  /* ---CSS로 카루셀 기능--- */
+  /* scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  overflow-x: scroll; */
 }
 
 .panel {
@@ -29,8 +34,15 @@ body {
   cursor: pointer;
   flex: 0.5;   /* 각각의 너비를 똑같게 만듦 */
   margin: 10px;
-  position: relative;  /* h3의 위치를 앱솔루트로 고정하기 위해 */
+  position: relative;  /* h3의 위치를 앱솔루트로 고정하기 위해  */
   transition: flex 0.7s ease-in;
+
+  /* ---CSS로 카루셀 --*/
+  /* height: 100vh;
+  min-width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  scroll-snap-align: start; */
 }
 
 .panel h3 {
