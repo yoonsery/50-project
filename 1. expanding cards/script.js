@@ -1,7 +1,6 @@
 'use strict';
 
 const panels = document.querySelectorAll('.panel');
-
 // console.log(panels);
 
 panels.forEach((panel) => {
