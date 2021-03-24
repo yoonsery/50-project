@@ -6,9 +6,9 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  overflow-x: hidden;
   background-color: #333;
   color: #222;
+  overflow-x: hidden;
   margin: 0;
 }
 
@@ -18,7 +18,7 @@ body {
   transition: transform 0.5s linear;
   width: 100vw;
   min-height: 100vh;
-  padding: 50px ;
+  padding: 50px;
 }
 
 .container.show-nav {
@@ -40,6 +40,10 @@ body {
   transition: transform 0.5s linear;
 }
 
+.container.show-nav .circle {
+  transform: rotate(-70deg);
+}
+
 .circle button {
   position: absolute;
   top: 50%;
@@ -47,7 +51,7 @@ body {
   height: 100px;
   background: transparent;
   border: 0;
-  font-size: 24px;
+  font-size: 26px;
   color: #fff;
 }
 .circle i {
@@ -55,7 +59,7 @@ body {
 }
 
 .circle button:focus {
-  outline: 0;
+  outline: none;
 }
 
 .circle button#open {
@@ -90,7 +94,7 @@ nav ul li {
   color: #fff;
   margin: 40px 0;
   transform: translateX(-100%);  /* nav메뉴가 안보일땐 화면에 안보이게 옆으로 옮겨놓음 */
-  transition: tranform 0.4s ease-in;
+  transition: transform 0.4s ease-in;
 }
 
 nav ul li i {
