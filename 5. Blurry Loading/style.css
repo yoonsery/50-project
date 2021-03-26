@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.bg {
+  background: url('./IMG_8670.JPG') no-repeat center center/cover;
+  position: absolute;
+  /* blur 하면 가장자리까 뿌옇게 되서 탑,레프트 위치를 땡겨주고
+  가로, 세로 너비도 땡긴만큼 추가 */
+  top: -30px;
+  left: -30px;
+  width: calc(100vw + 60px);
+  height: calc(100vh + 60px);
+  z-index: -1;
+  filter: blur(70px);
+}
+
+.loading-text {
+  font-size: 50px;
+  color: #fff;
+}
