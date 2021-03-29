@@ -75,3 +75,9 @@ body {
 .form-control input:valid {
   outline: none;
 }
+
+.form-control label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
