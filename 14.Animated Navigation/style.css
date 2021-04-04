@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 * {
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -35,7 +35,7 @@ nav {
 }
 
 nav.active {
-  width: 350px;
+  width: 360px;
 }
 
 nav ul {
@@ -67,6 +67,11 @@ nav ul a {
   color: #000;
   text-decoration: none;
   margin: 0 10px;
+  pointer-events: none;
+}
+
+nav.active ul a {
+  pointer-events: initial;
 }
 
 .icon {
@@ -99,9 +104,9 @@ nav ul a {
 }
 
 nav.active .icon .line1 {
-  transform: rotateY(-765deg) translateY(5.5px);
+  transform: rotate(-765deg) translateY(5.5px);
 }
 
 nav.active .icon .line2 {
-  transform: rotateY(765deg) translateY(-5.5px);
+  transform: rotate(765deg) translateY(-5.5px);
 }
