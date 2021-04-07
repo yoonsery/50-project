@@ -16,6 +16,15 @@ function highlightCups(idx) {
   ) {
     idx--;
   }
+  // bugs fixed
+  // if ($smallcups[idx].classList.contains('full')) {
+  //   idx--;
+  // } else if (
+  //   $smallcups[idx].classList.contains('full') &&
+  //   !$smallcups[idx].nextElementSibling.classList.contains('full')
+  // ) {
+  //   idx--;
+  // }
 
   $smallcups.forEach((cup, idx2) => {
     if (idx2 <= idx) {
