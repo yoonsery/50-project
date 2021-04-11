@@ -26,7 +26,6 @@ button {
   padding: 20px 30px;
   overflow: hidden;
   margin: 10px 0;
-  cursor: pointer;
 }
 
 button:focus {
