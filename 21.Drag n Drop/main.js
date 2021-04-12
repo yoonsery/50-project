@@ -29,18 +29,24 @@ function dragEnd() {
   this.className = 'fill';
 }
 
-function dragOver() {
-  console.log('drag over');
+function dragOver(e) {
+  e.preventDefault();
 }
 
-function dragEnter() {
-  console.log('drag enter');
+function dragEnter(e) {
+  e.preventDefault();
+  this.className += ' hovered';
 }
 
 function dragLeave() {
-  console.log('drag leave');
+  this.className = 'empty';
 }
 
 function dragDrop() {
-  console.log('drag drop');
+  /*
+  이렇게 하면 안먹히는 이유: dragover의 default action 값이
+  none으로 설정되어 있고 dragenter는 "Reject immediate user selection as potential target element." so, e.preventDefault() 해주면 drop 실행된당
+  */
+  this.className = 'empty';
+  this.append($fill);
 }
