@@ -20,11 +20,13 @@ $empties.forEach((empty) => {
 // }
 
 function dragStart() {
-  console.log('drag start');
+  // 기존에 있던 class는 그대로 두고 클래스 추가함 (기존에 있던 fill 클래스 존재하고 hold를 추가함)
+  this.className += ' hold';
+  setTimeout(() => (this.className = 'invisible'), 0);
 }
 
 function dragEnd() {
-  console.log('drag end');
+  this.className = 'fill';
 }
 
 function dragOver() {
