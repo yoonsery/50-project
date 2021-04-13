@@ -1,5 +1,10 @@
 const $canvas = document.getElementById('canvas');
 const ctx = $canvas.getContext('2d');
+const $decrease = document.getElementById('decrease');
+const $increase = document.getElementById('increase');
+const $color = document.getElementById('color');
+const $clear = document.getElementById('clear');
+const $size = document.getElementById('size');
 
 let size = 20;
 let color = 'black';
@@ -48,4 +53,24 @@ function drawLine(x1, y1, x2, y2) {
   ctx.strokeStyle = color;
   ctx.lineWidth = size * 2; // 선이 그으면 선이 원의 지름보다 작아서 면봉처럼 보이는데 ark에서 반지름을 설정해줬으니 * 2하면 된다
   ctx.stroke();
+}
+
+$decrease.addEventListener('click', () => {
+  size -= 5;
+  if (size <= 5) {
+    size = 5;
+  }
+  updateSize();
+});
+
+$increase.addEventListener('click', () => {
+  size += 5;
+  if (size >= 30) {
+    size = 30;
+  }
+  updateSize();
+});
+
+function updateSize() {
+  $size.textContent = size;
 }
