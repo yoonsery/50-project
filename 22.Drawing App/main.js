@@ -1,12 +1,13 @@
 const $canvas = document.getElementById('canvas');
-const ctx = $canvas.getContext('2d');
-const $decrease = document.getElementById('decrease');
-const $increase = document.getElementById('increase');
-const $color = document.getElementById('color');
-const $clear = document.getElementById('clear');
-const $size = document.getElementById('size');
+const $decreaseBtn = document.getElementById('decrease');
+const $increaseBtn = document.getElementById('increase');
+const $sizeEl = document.getElementById('size');
+const $colorEl = document.getElementById('color');
+const $clearEl = document.getElementById('clear');
 
-let size = 20;
+const ctx = $canvas.getContext('2d');
+
+let size = 10;
 let color = 'black';
 let isPressed = false;
 let x;
@@ -55,22 +56,24 @@ function drawLine(x1, y1, x2, y2) {
   ctx.stroke();
 }
 
-$decrease.addEventListener('click', () => {
+function updateSizeOnScreen() {
+  $sizeEl.textContent = size;
+}
+
+$colorEl.addEventListener('change', (e) => (color = e.target.value));
+
+$decreaseBtn.addEventListener('click', () => {
   size -= 5;
-  if (size <= 5) {
+  if (size < 5) {
     size = 5;
   }
-  updateSize();
+  updateSizeOnScreen();
 });
 
-$increase.addEventListener('click', () => {
+$increaseBtn.addEventListener('click', () => {
   size += 5;
-  if (size >= 30) {
-    size = 30;
+  if (size > 40) {
+    size = 40;
   }
-  updateSize();
+  updateSizeOnScreen();
 });
-
-function updateSize() {
-  $size.textContent = size;
-}
