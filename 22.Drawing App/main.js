@@ -8,8 +8,9 @@ const $clearEl = document.getElementById('clear');
 const ctx = $canvas.getContext('2d');
 
 let size = 10;
-let color = 'black';
 let isPressed = false;
+$colorEl.value = 'black';
+let color = $colorEl.value;
 let x;
 let y;
 
@@ -76,4 +77,8 @@ $increaseBtn.addEventListener('click', () => {
     size = 40;
   }
   updateSizeOnScreen();
+});
+
+$clearEl.addEventListener('click', () => {
+  ctx.clearRect(0, 0, $canvas.width, $canvas.height);
 });
