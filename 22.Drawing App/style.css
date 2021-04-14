@@ -43,3 +43,11 @@ canvas {
 .toolbox > *:last-child {
   margin-left: auto;
 }
+
+.toolbox > *:focus {
+  outline: none;
+}
+
+#random-color.active {
+  background-color: #b39ddb;
+}

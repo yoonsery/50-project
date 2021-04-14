@@ -3,16 +3,19 @@ const $decreaseBtn = document.getElementById('decrease');
 const $increaseBtn = document.getElementById('increase');
 const $sizeEl = document.getElementById('size');
 const $colorEl = document.getElementById('color');
+const $randomBtn = document.getElementById('random-color');
 const $clearEl = document.getElementById('clear');
 
 const ctx = $canvas.getContext('2d');
 
 let size = 10;
 let isPressed = false;
-$colorEl.value = 'black';
 let color = $colorEl.value;
+$colorEl.value = '#000000';
 let x;
 let y;
+let isRandom = false;
+let hue = 0;
 
 $canvas.addEventListener('mousedown', (e) => {
   isPressed = true;
@@ -27,6 +30,9 @@ $canvas.addEventListener('mouseup', (e) => {
 });
 
 $canvas.addEventListener('mousemove', (e) => {
+  if (!isPressed) {
+    return;
+  }
   if (isPressed) {
     const x2 = e.offsetX;
     const y2 = e.offsetY;
@@ -38,10 +44,21 @@ $canvas.addEventListener('mousemove', (e) => {
     x = x2;
     y = y2;
     // 선이 생기긴 하는데 선이 원의 지름보다 작아서 면봉처럼 보이는 현상
+
+    if (isRandom) {
+      hue++;
+      ctx.fillStyle = `hsl(${hue}, 100%, 50%)`;
+      if (hue >= 360) {
+        hue = 0;
+      }
+    }
   }
 });
 
 function drawCircle(x, y) {
+  if (isRandom) {
+    color = `hsl(${hue}, 100%, 50%)`;
+  }
   ctx.beginPath();
   ctx.arc(x, y, size, 0, Math.PI * 2);
   ctx.fillStyle = color;
@@ -61,7 +78,13 @@ function updateSizeOnScreen() {
   $sizeEl.textContent = size;
 }
 
-$colorEl.addEventListener('change', (e) => (color = e.target.value));
+$colorEl.addEventListener('change', (e) => {
+  isRandom = false;
+  color = e.target.value;
+  ctx.fillStyle = color;
+
+  $randomBtn.classList.remove('active');
+});
 
 $decreaseBtn.addEventListener('click', () => {
   size -= 5;
@@ -77,6 +100,11 @@ $increaseBtn.addEventListener('click', () => {
     size = 40;
   }
   updateSizeOnScreen();
+});
+
+$randomBtn.addEventListener('click', () => {
+  $randomBtn.classList.add('active');
+  isRandom = true;
 });
 
 $clearEl.addEventListener('click', () => {
