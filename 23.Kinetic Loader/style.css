@@ -11,3 +11,70 @@ body {
   overflow: hidden;
   margin: 0;
 }
+
+.kinetic {
+  position: relative;
+  height: 80px;
+  width: 80px;
+}
+
+.kinetic::after,
+.kinetic::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-bottom-color: #fff;
+  animation: rotateA 2s linear infinite 0.5s;
+}
+
+/* 삼각형 만드는 다른 방법(position absolute 아닌고 각도가 다름)
+.triangle {
+  height: 0;
+  width: 0;
+  border-bottom: 200px solid rgb(255, 206, 206);
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  margin-bottom: 50px;
+} */
+
+.kinetic::before {
+  transform: rotate(90deg);
+  border-bottom-color: green;
+  animation: rotateB 2s linear infinite;
+}
+
+@keyframes rotateA {
+  0%,
+  25% {
+    transform: rotate(0deg);
+  }
+
+  50%,
+  75% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateB {
+  0%,
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50%,
+  75% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(450deg);
+  }
+}
