@@ -52,7 +52,6 @@ img {
 
 .author {
   display: flex;
-  align-items: center;
 }
 
 .profile-img {
@@ -67,7 +66,7 @@ img {
   flex-direction: column;
   justify-content: space-around;
   margin-left: 10px;
-  width: 200px;
+  width: 100px;
 }
 
 .author-info small {
