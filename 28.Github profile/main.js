@@ -7,13 +7,15 @@ const main = document.getElementById('main');
 async function getUser(username) {
   try {
     const { data } = await axios(APIURL + username);
-    creatUserCard(data);
+    createUserCard(data);
   } catch (err) {
-    console.log(err);
+    if (err.response.status == 404) {
+      createErrorCard('No profile with this username');
+    }
   }
 }
 
-function creatUserCard(user) {
+function createUserCard(user) {
   const cardHTML = `
   <div class="card">
     <div>
@@ -35,18 +37,25 @@ function creatUserCard(user) {
 
       <div id="repos"></div>
     </div>
-  </div>`;
+  </div>
+  `;
+  main.innerHTML = cardHTML;
+}
+
+async function createErrorCard(message) {
+  const cardHTML = `
+    <div class="card">
+      <h1>${message}</h1>
+    </div>`;
   main.innerHTML = cardHTML;
 }
 
 form.addEventListener('submit', (e) => {
-  e.preventDefault;
+  e.preventDefault();
 
   const user = search.value;
   if (user) {
-    console.log(user);
     getUser(user);
-    console.log(user);
     search.value = '';
   }
 });
