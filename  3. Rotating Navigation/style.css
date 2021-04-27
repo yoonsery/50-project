@@ -73,7 +73,7 @@ body {
 }
 
 .container.show-nav + nav li {
-  transform: translateX(0);  /* 컨테이너가 돌아가면 메뉴가 보이게 제자리로~  */
+  transform: translateX(0); /* 컨테이너가 돌아가면 메뉴가 보이게 제자리로~  */
   transition-delay: 0.3s;
 }
 
@@ -93,7 +93,9 @@ nav ul li {
   text-transform: uppercase;
   color: #fff;
   margin: 40px 0;
-  transform: translateX(-100%);  /* nav메뉴가 안보일땐 화면에 안보이게 옆으로 옮겨놓음 */
+  transform: translateX(
+    -100%
+  ); /* nav메뉴가 안보일땐 화면에 안보이게 옆으로 옮겨놓음 */
   transition: transform 0.4s ease-in;
 }
 
@@ -132,5 +134,5 @@ nav ul li + li + li {
 
 .content p {
   color: #333;
-  line-height: 1.5;  /* 줄 간격 늘림 */
+  line-height: 1.5; /* 줄 간격 늘림 */
 }
