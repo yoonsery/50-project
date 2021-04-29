@@ -21,7 +21,7 @@ div {
   bottom: 30px;
   background: rgb(32, 134, 111, 0.3);
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 3px;
   font-size: 18px;
 }
 
@@ -31,6 +31,7 @@ input {
   font-size: 18px;
   background: #58b69d;
   border: none;
+  border-radius: 2px;
   text-align: center;
 }
 
