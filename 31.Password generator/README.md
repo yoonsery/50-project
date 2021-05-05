@@ -19,3 +19,6 @@ function shuffleArrayOrder(array) {
   return array.sort(() => Math.random() - 0.5);
 }
 ```
+
+**add clipboard** <br>
+`document.execCommand('copy')`
