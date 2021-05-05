@@ -1,13 +1,13 @@
 ## ✍🏻
 
-`const length = +lengthEl.value;`
-add + to convert a string to a number
+`const length = +lengthEl.value;`<br>
+add + to convert a string to a number<br>
 console.log(length, typeof length); // 20 "number"
 
-**Object.values()**
+**Object.values()** <br>
 returns an array of a given object's own enumerable property values
 
-**Object.keys()**
+**Object.keys()**<br>
 returns an array of a given object's own enumerable property names
 
 ### additional effect
