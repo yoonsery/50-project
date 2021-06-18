@@ -38,7 +38,7 @@ input[type='range']:focus {
 input[type='range'] + label {
   background-color: white;
   position: absolute;
-  top: -50%;
+  top: -25px;
   left: 110px;
   width: 80px;
   padding: 5px 0;
