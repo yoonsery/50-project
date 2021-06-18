@@ -27,10 +27,10 @@ body {
   font-size: 18px;
   padding: 15px;
   height: 50px;
-  width: 50px;  /* transition, animation 으로 크기 바꿀거얌  */
+  width: 50px; /* transition, animation 으로 크기 바꿀거얌  */
   caret-color: #65c29f;
   border-radius: 4px;
-  transition: all 0.3s ease ;
+  transition: all 0.3s ease;
 }
 
 .input:focus,
@@ -55,7 +55,7 @@ body {
   transition: all 0.3s ease;
 }
 
-.search.active .input{
+.search.active .input {
   width: 200px;
   border-radius: 4px 0 0 4px;
 }
