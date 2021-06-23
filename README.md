@@ -4,7 +4,7 @@ To study HTML, CSS, JavaScript I take this [course](https://www.udemy.com/course
 
 | /#     | Project                                 | Demo     |
 | ------ | --------------------------------------- | -------- |
-| **01** | [Expanding Cards](./01.expanding-cards) | [Demo]() |
+| **01** | [Expanding Cards](./01.expanding%20cards) | [Demo]() |
 | **02** | [Progress Steps]()                      | [Demo]() |
 | **03** | [Rotating Navigation]()                 | [Demo]() |
 | **04** | [Hidden Search Widget]()                | [Demo]() |
