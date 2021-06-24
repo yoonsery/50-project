@@ -10,7 +10,7 @@
   --speed: 1000ms;
 }
 * {
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -75,12 +75,13 @@ h1 {
 .split.left {
   left: 0;
   background-size: cover;
-  background: url('https://instagram.fiev22-2.fna.fbcdn.net/v/t51.2885-15/e35/s1080x1080/162266517_1246221675771970_5255896273436639883_n.jpg?tp=1&_nc_ht=instagram.fiev22-2.fna.fbcdn.net&_nc_cat=110&_nc_ohc=Q-wRpoSXv7cAX-8FLuY&ccb=7-4&oh=b2141702574ab668e4ee0dd5e69b6c0c&oe=60884B52&_nc_sid=4f375e') no-repeat;
+  background: url('./ps.jpg') no-repeat;
+  background-size: cover;
 }
 
 .split.left::before {
   content: '';
-  position: absolute ;
+  position: absolute;
   width: 100%;
   height: 100%;
   background-color: var(--left-bg-color);
@@ -89,12 +90,13 @@ h1 {
 .split.right {
   right: 0;
   background-size: cover;
-  background: url('https://pbs.twimg.com/media/EkwmHY9UYAAzE9Y?format=jpg&name=large') no-repeat;
+  background: url('./xbox.jpg') no-repeat;
+  background-size: cover;
 }
 
 .split.right::before {
   content: '';
-  position: absolute ;
+  position: absolute;
   width: 100%;
   height: 100%;
   background-color: var(--right-bg-color);
