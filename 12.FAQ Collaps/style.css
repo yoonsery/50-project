@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Muli:wght@200;400&display=swap');
 
 * {
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 body {
   background-color: #f0f0f0;
@@ -35,20 +35,20 @@ h1 {
 }
 
 .faq.active::before,
-.faq.active::after  {
+.faq.active::after {
   content: '\f075';
   font-family: 'font awesome 5 free';
-  color: rgb(172, 214, 151);
+  color: #acd697;
   font-size: 7rem;
   position: absolute;
-  opacity: 0.3;
+  opacity: 0.2;
   top: 20px;
   left: 20px;
   z-index: 0;
 }
 
 .faq.active::after {
-  color: rgb(118, 245, 245);
+  color: #76f5f5;
   top: -10px;
   left: -30px;
   transform: rotateY(180deg);
