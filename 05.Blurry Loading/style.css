@@ -15,7 +15,7 @@ body {
 }
 
 .bg {
-  background: url('./IMG_8670.JPG') no-repeat center center/cover;
+  background: url('./heampstead.JPG') no-repeat center center/cover;
   position: absolute;
   /* blur 하면 가장자리까 뿌옇게 되서 탑,레프트 위치를 땡겨주고
   가로, 세로 너비도 땡긴만큼 추가 */
