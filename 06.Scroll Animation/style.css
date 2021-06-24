@@ -8,7 +8,7 @@ body {
   background-color: #d6efdd;
   font-family: 'Roboto', sans-serif;
   display: flex;
-  flex-direction: column ;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   overflow-x: hidden;
@@ -16,7 +16,7 @@ body {
 }
 
 h1 {
-  margin: 10px;
+  margin: 20px;
 }
 
 .box {
