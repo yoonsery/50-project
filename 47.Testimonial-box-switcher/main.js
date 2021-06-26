@@ -19,10 +19,10 @@ loadTestimonials() //
 function updateTestimonial(item) {
   const { name, position, photo, text } = item[idx];
 
-  testimonial.innerHTML = text;
+  testimonial.textContent = text;
   userImage.src = photo;
-  username.innerHTML = name;
-  role.innerHTML = position;
+  username.textContent = name;
+  role.textContent = position;
 
   idx++;
 
