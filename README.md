@@ -51,6 +51,6 @@ To study HTML, CSS, JavaScript I take this [course](https://www.udemy.com/course
 | 45  | [Netflix Navigation](./45.Netflix%20Navigation)                             | [Demo](https://50project-netflix-navigation.netlify.app/)     |
 | 46  | [Quiz App](./46.Quiz%20App)                                                 | [Demo](https://50project-quiz-app.netlify.app/)               |
 | 47  | [Testimonial Switcher](./47.Testimonial%20Box%20Switcher)                   | [Demo](https://50project-testimonial-switcher.netlify.app/)   |
-| 48  | [](.)                                                                       | [Demo]()                                                      |
+| 48  | [Random Image Feed](./48.%20Random%20Image%20Feed)                          | [Demo](https://50project-random-img-feed.netlify.app/)        |
 | 49  | [](.)                                                                       | [Demo]()                                                      |
 | 50  | [](.)                                                                       | [Demo]()                                                      |
