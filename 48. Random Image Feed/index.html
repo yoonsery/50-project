@@ -21,5 +21,23 @@
 
     <title>Random Image Feed</title>
   </head>
-  <body></body>
+  <body>
+    <h1 class="title">Random Image Feed</h1>
+    <div class="button-container">
+      <label class="number-label" for="number"
+        >How many images do you want?</label
+      >
+      <input
+        class="image-number"
+        type="number"
+        name="number"
+        value="15"
+        min="6"
+        max="30"
+        step="3"
+      />
+      <button class="load-image" type="submit">Get Images</button>
+    </div>
+    <div class="container"></div>
+  </body>
 </html>
