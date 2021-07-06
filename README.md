@@ -52,5 +52,5 @@ To study HTML, CSS, JavaScript I take this [course](https://www.udemy.com/course
 | 46  | [Quiz App](./46.Quiz%20App)                                                 | [Demo](https://50project-quiz-app.netlify.app/)               |
 | 47  | [Testimonial Switcher](./47.Testimonial%20Box%20Switcher)                   | [Demo](https://50project-testimonial-switcher.netlify.app/)   |
 | 48  | [Random Image Feed](./48.%20Random%20Image%20Feed)                          | [Demo](https://50project-random-img-feed.netlify.app/)        |
-| 49  | [](.)                                                                       | [Demo]()                                                      |
-| 50  | [](.)                                                                       | [Demo]()                                                      |
+| 49  | [Todo List](./49.Todo%20List)                                               | [Demo](https://50project-todolist.netlify.app/)               |
+| 50  | [Insect Catch Game](./50.Insect%20Catch%20Game)                             | [Demo](https://50project-insect-catch-game.netlify.app/)      |
