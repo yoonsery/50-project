@@ -3,7 +3,7 @@ const $tagsElement = document.getElementById('tags');
 
 $textarea.focus();
 
-// 한글로 입력하면 에러가 난당...왤까
+// 한글로 입력하면 에러가 나므로 e.isComposing 처리를 해준다
 $textarea.addEventListener('keyup', (e) => {
   if (e.isComposing) {
     return;
