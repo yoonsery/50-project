@@ -54,3 +54,8 @@ To study HTML, CSS, JavaScript I take this [course](https://www.udemy.com/course
 | 48  | [Random Image Feed](./48.%20Random%20Image%20Feed)                          | [Demo](https://50project-random-img-feed.netlify.app/)        |
 | 49  | [Todo List](./49.Todo%20List)                                               | [Demo](https://50project-todolist.netlify.app/)               |
 | 50  | [Insect Catch Game](./50.Insect%20Catch%20Game)                             | [Demo](https://50project-insect-catch-game.netlify.app/)      |
+
+<hr>
+<br>
+
+![Udemy_50project_certificate](Udemy_50project_certificate.jpeg)
