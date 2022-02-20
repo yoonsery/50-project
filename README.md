@@ -58,4 +58,62 @@ To study HTML, CSS, JavaScript I take this [course](https://www.udemy.com/course
 <hr>
 <br>
 
+## Note & What I Learn ✍🏻
+
+<details>
+<summary> 31. Password Generator</summary>
+
+`const length = +lengthEl.value;`  
+add `+` to convert a string to a number
+
+> console.log(length, typeof length); // 20 "number"
+
+**Object.values()**  
+returns an array of a given object's own enumerable property values
+
+**Object.keys()**  
+returns an array of a given object's own enumerable property names
+
+### additional effect
+
+**add shuffle array function**
+
+```js
+function shuffleArrayOrder(array) {
+  return array.sort(() => Math.random() - 0.5);
+}
+```
+
+**add clipboard**  
+`document.execCommand('copy')`
+
+</details>
+
+<details>
+<summary> 44. Custom Range Slider</summary>
+
+- [-webkit-slider-runnable-track](https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-slider-runnable-track)
+- [-webkit-slider-thumb](https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-slider-thumb)
+- [getComputedStyle(element)](https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle)
+- [getPropertyValue(property)](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/getPropertyValue)
+
+</details>
+
+<details>
+<summary> 49. Todo List</summary>
+
+### [localStorage](https://ko.javascript.info/localstorage#ref-312)
+
+- localStorage의 키와 값은 반드시 문자열이이어야 한다
+- JSON을 사용하면 객체를 쓸 수 있다
+
+### [JSON.stringify()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)
+
+: converts a JavaScript object or value to a JSON string
+
+</details>
+
+<hr>
+<br>
+
 ![Udemy_50project_certificate](Udemy_50project_certificate.jpeg)
